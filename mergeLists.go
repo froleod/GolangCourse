@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 /* Реализуйте функцию MergeNumberLists(numberLists ...[]int) []int,
 которая принимает вариативный список слайсов чисел и объединяет их в 1,
 сохраняя последовательность:
@@ -20,10 +18,6 @@ func MergeNumberLists(numberLists ...[]int) []int {
 		return []int{}
 	}
 	return merged
-}
-
-func main() {
-	fmt.Print(MergeNumberLists([]int{1, 2}, []int{3}, []int{4}))
 }
 
 // END
