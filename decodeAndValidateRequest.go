@@ -19,6 +19,12 @@ var (
 	ErrPasswordDoesNotMatch         = errors.New("password does not match with the confirmation")
 )
 
+/*
+ реализуйте функцию DecodeAndValidateRequest(requestBody []byte) (CreateUserRequest, error),
+которая декодирует тело запроса из JSON в структуру CreateUserRequest и валидирует ее.
+Если приходит невалидный JSON или структура заполнена неверно, функция должна вернуть ошибку.
+*/
+
 // DecodeAndValidateRequest BEGIN (write your solution here)
 func DecodeAndValidateRequest(requestBody []byte) (CreateUserRequest, error) {
 	req := CreateUserRequest{}
